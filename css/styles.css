@@ -1,0 +1,1510 @@
+/* This is 'styles.css' File of Fun2Learn */
+
+/* Importing Poppins Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+
+/*
+==========================================================================================================================================================================================
+                                                                    U T I L I T Y       C L A S S E S
+==========================================================================================================================================================================================
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: #111;
+}
+
+li{
+    list-style: none;
+}
+
+section{
+    width: 100%;
+}
+
+#one{
+    max-height: fit-content;
+}
+
+.btn{
+    width: 250px;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: crimson;
+    border-radius: 2px;
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                            N A V I G A T I O N
+==========================================================================================================================================================================================
+*/
+
+/* Header Section */
+header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.4);
+}
+
+header .part-1{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
+header .part-1 img{
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+header .part-1 a h6{
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    margin: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.focus{
+    color: crimson;
+    font-size: 40px;
+}
+
+.icons{
+    color: orange;
+}
+
+header .part-2{
+    width: 50%;
+    align-self: center;
+}
+
+header .part-2 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .part-2 ul li{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+header .part-2 ul li:hover{
+    background-color: rgb(225, 225, 225);
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                    H O M E     P A G E  -  B A N N E R
+==========================================================================================================================================================================================
+*/
+
+/* Banner Section */
+#banner{
+    width: 90%;
+    margin: 30px auto 25px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 0px;
+}
+
+#banner .left h2{
+    font-weight: bold;
+    font-size: 45px;
+    color: crimson;
+}
+
+#banner .left p{
+    padding: 14px 0px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#banner .left .btn{
+    background-color: rgb(128, 12, 128);
+}
+
+#banner .left .btn a{
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#banner .right{
+    width: 40%;
+    padding: 14px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#banner .right img{
+    width: 500px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+.title p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title .fa-caret-down{
+    font-size: 24px;
+    cursor: pointer;
+    color: crimson;
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                    H O M E     P A G E  -  M A P S
+==========================================================================================================================================================================================
+*/
+
+#two{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Map-Container */
+#map-container{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#map-container #monument-list{
+    height: 90vh;
+    width: 25%;
+    overflow: auto;
+    background: #11101d;
+}
+
+#map-container #monument-list::-webkit-scrollbar{
+    width: 5px;
+    cursor: pointer;
+}
+
+#map-container #monument-list::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+#map-container #monument-list::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 2px;
+}
+
+#map-container #map{
+    height: 90vh;
+    margin: 0px 10px;
+    width: 70%;
+    border-radius: 25px;
+}
+
+#map-container #monument-list .heading{
+    background: #11101d;
+    width: 100%;
+    box-shadow: 2px 0px 10px orange;
+}
+
+#map-container #monument-list .heading h4{
+    padding: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+}
+
+#map-container #monument-list ul li{
+    list-style: none;
+}
+
+#map-container #monument-list .state-list{
+    padding: 8px;
+}
+
+#map-container #monument-list .state-list .state-item{
+    padding: 10px 15px;
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+}
+
+#map-container #monument-list .state-item:hover{
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#map-container #monument-list .state-item:hover a{
+    color: #11101d;
+}
+
+#map-container #monument-list .state-item a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#map-container #monument-list .state-item p{
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+#map-container #map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leaflet-popup-content{
+    margin: 10px 15px !important;
+    line-height: 1.2 !important;
+    width: 300px;
+}
+
+.leaflet-popup-content .popup-content{
+    padding: 5px;
+}
+
+.leaflet-popup-content .popup-content h4{
+    background: crimson;
+    padding: 10px 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.leaflet-popup-content .popup-content p{
+    margin: 0 !important; 
+    padding: 5px 0 !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-align: justify !important;
+}
+
+.leaflet-popup-content .popup-content .img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.leaflet-popup-content .popup-content .img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.leaflet-popup-content .popup-content .other .sub-title{
+    margin-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.leaflet-popup-content .popup-content .other .other-monuments{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+}
+
+.leaflet-popup-content .popup-content .other .other-monuments li{
+    color: crimson;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*
+================================================================================================================================================================================================
+                                                                                C A R D S
+================================================================================================================================================================================================
+*/
+
+#features{
+    padding: 10vh 0;
+    height: 100vh;
+}
+
+.card-items{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('https://cdn.wallpapersafari.com/15/1/3pinwA.jpg');
+}
+
+.card-items .up .two-title{
+    font-family: 'Lobster Two', cursive;
+    color: #fff;
+    font-size: 48px;
+}
+
+.card-items .bottom{
+    width: 90%;
+    margin: 15px auto;
+}
+
+.card-items .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-items .cards .info{
+    color: #111;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 22px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+
+.card-items .cards .info .fea-icons, .fa-leanpub, .fa-brain, .fa-pen{
+    margin: 10px 0px;
+    font-size: 28px;
+    color: orange;
+}
+
+.card-items .cards .info h5{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0px 15px 0px;
+}
+
+.card-items .cards .info p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.card-items .cards .info:hover{
+    color: #fff;
+    background-color: orange;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card-items .cards .info:hover .fa-leanpub{
+    color: #fff;
+}
+
+.card-items .cards .info:hover .fa-brain{
+    color: #fff;
+}
+
+.card-items .cards .info:hover .fa-pen{
+    color: #fff;
+}
+
+.card-items .cards .info:hover .fea-icons{
+    color: #fff;
+}
+
+
+/*
+==========================================================================================================================================================================================
+                                                                    H O M E      P A G E    -   C O N T A C T
+==========================================================================================================================================================================================
+*/
+
+#contact{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #112d42;
+    min-height: 80vh;
+}
+
+#contact:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #03a9f4;
+}
+
+#contact .Container{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+
+#contact .Container .contactinfo{
+    position: absolute;
+    top: 90px;
+    width: 350px;
+    height: calc(100% - 160px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#contact .Container .contactinfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#contact .Container .contactinfo .info{
+    position: relative;
+    margin: 20px 0;
+    padding-left: 0px !important;
+}
+
+#contact .Container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    display: flex;
+    font-size: 14px;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+#contact .Container .contactinfo .info li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+    color: #fff;
+    opacity: 0.65;
+}
+
+#contact .Container .contactinfo .info li:hover span:nth-child(1){
+    opacity: 1;
+}
+
+#contact .Container .contactinfo .info li span:nth-child(2){
+    width: 100%;
+    min-width: 30px;
+    color: #fff;
+    opacity: 0.65;
+}
+
+#contact .Container .contactinfo .info li:hover span:nth-child(2){
+    opacity: 1;
+}
+
+#contact .Container .contactinfo .sci{
+    position: relative;
+    display: flex;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+
+#contact .Container .contactinfo .sci li{
+    list-style: none;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+#conntact .Container .contactinfo .sci li a .fa-linkedin, .fa-github, .fa-whatsapp{
+    color: #fff;
+}
+
+#contact .Container .contactForm{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    width: calc(100% - 150px);
+    margin-left: 150px;
+    padding-left: 250px;
+    top: 50px;
+    height: 85%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.45);
+}
+
+#contact .Container .contactForm h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#contact .Container .contactForm .formBox{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+#contact .Container .contactForm .formBox .inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+#contact .Container .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+
+#contact .Container .contactForm .formBox .inputBox.w100{
+    width: 100%;
+}
+
+#contact .Container .contactForm .formBox .inputBox input, textarea{
+    width: 100% !important;
+    resize: none;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+
+#contact .Container .contactForm .formBox .inputBox textarea{
+    min-height: 60px;
+}
+
+#contact .Container .contactForm .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+#contact .Container .contactForm .formBox .inputBox input:focus ~ span, 
+#contact .Container .contactForm .formBox .inputBox textarea:focus ~ span,
+#contact .Container .contactForm .formBox .inputBox input:valid ~ span,
+#contact .Container .contactForm .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-25px);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: crimson;
+}
+
+#contact .Container .contactForm .formBox .inputBox input[type="submit"]{
+    position: absolute;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    outline: none;
+    max-width: 150px;
+    padding: 12px;   
+}
+
+#contact .Container .contactForm .formBox .inputBox input[type="submit"]:hover{
+    background: crimson;
+}
+
+#contact .up{
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+}
+
+#contact .up .fa-arrow-circle-up{
+    font-size: 32px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                        T E S T     P A G E  -  M A P S
+==========================================================================================================================================================================================
+*/
+
+#games{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#games .up .two-title{
+    font-family: 'Lobster Two', cursive;
+    font-size: 48px;
+}
+
+#games .bottom{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#games .game{
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    height: fit-content;
+    margin: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#games .game img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+
+#games .game .game-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    letter-spacing: 1.2px;
+}
+
+#games .game .game-info h6{
+    margin: 0;
+    font-weight: bold;
+}
+
+#games .game .game-info span{
+    background-color: rgb(39, 189, 39);
+    color: #fff;
+    border-radius: 3px;
+    padding: 4px 8px; 
+    font-weight: bold;
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                            M O D A L   P O P U P
+==========================================================================================================================================================================================
+*/
+
+.modal_container1, .modal_container2, .modal_container3{
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+    z-index: 100000;
+}
+
+.modal_container1.show, .modal_container2.show, .modal_container3.show{
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.5s ease-in-out;
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                        Q U I Z     G A M E
+==========================================================================================================================================================================================
+*/
+
+.content-1{
+    width: 90%;
+    height: calc(100vh - 60px);
+    background-color: #007bff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+::selection{
+    color: #fff;
+    background: #007bff;
+}
+
+.start_btn, .info_box, .quiz_box, .result_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info_box.activeInfo, .quiz_box.activeQuiz,.result_box.activeResult{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.start_btn button{
+    font-size: 25px;
+    font-weight: 500;
+    color: #007bff;
+    padding: 15px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.info_box{
+    width: 540px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.info_box .info-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    border-radius: 5px 5px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info_box .info-list{
+    padding: 15px 30px;
+}
+
+.info_box .info-list .info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info_box .info-list .info span{
+    font-weight: 600;
+    color: #007bff;
+}
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.quiz_box{
+    width: 550px;
+    background: #fff;
+    border-radius: 5px;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.quiz_box header{
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+
+.quiz_box header .title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quiz_box header .timer{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+
+.quiz_box header .timer .time_left_txt{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+
+.quiz_box header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+
+.pbl-quiz{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+
+section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+section .option_list{
+    padding: 20px 0px;
+    display: block;   
+}
+
+section .option_list .option{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .option_list .option:last-child{
+    margin-bottom: 0px;
+}
+
+section .option_list .option:hover{
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+}
+
+section .option_list .option.correct{
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+section .option_list .option.incorrect{
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+section .option_list .option.disabled{
+    pointer-events: none;
+}
+
+section .option_list .option .icon{
+    height: 26px;
+    width: 26px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    line-height: 24px;
+}
+.option_list .option .icon.tick{
+    color: #23903c;
+    border-color: #23903c;
+    background: #d4edda;
+}
+
+.option_list .option .icon.cross{
+    color: #a42834;
+    background: #f8d7da;
+    border-color: #a42834;
+}
+
+footer{
+    height: 60px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+}
+
+footer .total_que span{
+    display: flex;
+    user-select: none;
+}
+
+footer .total_que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+footer .total_que span p:first-child{
+    padding-left: 0px;
+}
+
+footer button{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    background: #007bff;
+    border: 1px solid #007bff;
+    line-height: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+    transition: all 0.3s ease;
+}
+
+footer button:hover{
+    background: #0263ca;
+}
+
+footer button.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+.result_box{
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    padding: 25px 30px;
+    width: 450px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.result_box .icon{
+    font-size: 100px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.result_box .complete_text{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.result_box .score_text span{
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result_box .score_text span p{
+    padding: 0 4px;
+    font-weight: 600;
+}
+
+.result_box .buttons{
+    display: flex;
+    margin: 20px 0;
+}
+
+.result_box .buttons button{
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.buttons button.restart{
+    color: #fff;
+    background: #198754;
+}
+
+.buttons button.quit{
+    color: #fff;
+    background: #dc3545;
+}
+
+/*
+================================================================================================================================================================================================
+                                                                            G O     G U E S S E R
+================================================================================================================================================================================================
+*/
+
+.content-2{
+    width: 90%;
+    background-color: #fff;
+    height: calc(100vh - 60px);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content-2 #map{
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-2 #map .name{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 9999;
+    top: 50px;
+    right: 50px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background: #11101d
+}
+
+.content-2 #map .name h6{
+    font-size: 14px;
+}
+
+.content-2 #map .name .geo-question{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+}
+
+.result .guess-result{
+    font-weight: bold;
+}
+
+.result .next{
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    background: #198754;
+    color: #fff;
+}
+
+.result .progress{
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.leaflet-popup-content{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                        C A R D     M A T C H I N G     G A M E
+==========================================================================================================================================================================================
+*/
+
+
+.content-3{
+    width: 90%;
+    background-color: #fff;
+    height: calc(100vh - 60px);
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.5em;
+    justify-content: space-around;
+}
+
+.container .left{
+    width: 20%;
+}
+
+ul > li{
+    list-style: none;
+}
+
+.card, .reset-btn{
+    cursor: pointer;
+}
+
+.btn{
+    border-radius: 1em;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    padding: 0.8em;
+}
+
+/* Header */
+
+.game-title{
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.game-score{
+    font-weight: 400;
+}
+
+/* Section - Score Panel */
+
+.score-panel{
+    font-size: 1.2em;
+    padding: 1em 0 2em;
+}
+
+.star-rating > li{
+    display: inline-block;
+    padding: 0.5em;
+}
+
+.moves-counter{
+    padding: 0.5em;
+}
+
+.reset-btn{
+    background: #000;
+}
+
+.timer-container{
+    background: #fff;
+    border-radius: 0.5em;
+    color: #000;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+.timer{
+    font-size: 1em;
+}
+
+/* Result Modal */
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 61, 73);
+    background-color: rgba(46, 61, 73, 0.6);
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin: 1% auto;
+    border: 0.8em solid #fc4;
+    padding-right: 2em;
+    width: 80%;
+}
+
+.close{
+    align-self: flex-end;
+    color: #28e;
+    font-size: 3em;
+}
+
+.close:hover, .close:focus{
+    color: #5cf;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-img{
+    display: inline-block;
+    margin: 1em 0 1em;
+    width: 10em;
+    height: max-content;
+    object-fit: contain;
+}
+
+p.stats{
+    font-weight: 600;
+}
+
+.play-again-btn{
+    background: #28e;
+    margin-bottom: 1em;
+}
+
+/* Deck of Cards */
+
+.deck{
+    background: linear-gradient(to bottom, #5cf, #28e);
+    border-radius: 1.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 30em;
+    margin: 30px 0px;
+    padding: 1em;
+    width: 40em;
+}
+
+.deck, .card{
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.card{
+    background: #fc4;
+    border-radius: 0.5em;
+    height: 6em;
+    width: 8em;
+}
+
+img{
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.deck img{
+    visibility: hidden;
+}
+
+.deck .card.flip{
+    background: #fff;
+    cursor: default;
+    /* transform: rotateY(180deg); */
+    transition: 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.flip img{
+    background: #fff;
+    visibility: visible;
+}
+
+.deck .card.match{
+    background: #39d;
+    visibility: visible;
+    cursor: default;
+    animation: pulse 1s;
+}
+
+.match img{
+    background: #39d;
+}
+
+@keyframes pulse{
+
+  0%{
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(1.1);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+/*
+==========================================================================================================================================================================================
+                                                                        F A Q   P A G E     -   A C C O R D I A N
+==========================================================================================================================================================================================
+*/
+
+.faq-title{
+    text-align: center;
+	padding: 20px;
+	font-size: 32px;
+    font-weight: bold;
+}
+
+h3{
+	padding: 20px;
+	padding-left: 0px;
+}
+ 
+.faq{
+	font-size: 20px;
+}
+
+.accordion {
+	width: 90%;
+	max-width: 1000px;
+	margin: 2rem auto;
+}
+  
+.accordion-item {
+	background-color: #fff;
+	color: #111;
+	margin: 1rem 0;
+	border-radius: 0.5rem;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+}
+
+.accordion-item-header {
+	padding: 0.5rem 3rem 0.5rem 1rem;
+	min-height: 3.5rem;
+	line-height: 1.25rem;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+  
+.accordion-item-header::after {
+	content: "\002B";
+	font-size: 2rem;
+	position: absolute;
+	right: 1rem;
+}
+  
+.accordion-item-header.active::after {
+	content: "\2212";
+}
+
+.accordion-item-body {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+  
+.accordion-item-body-content {
+	padding: 1rem;
+	line-height: 1.5rem;
+	border-top: 1px solid;
+	border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
