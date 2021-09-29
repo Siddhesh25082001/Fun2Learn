@@ -59,7 +59,7 @@ next.addEventListener("click", () => {
 });
 
 var myIcon = L.icon({
-    iconUrl: '../images/icon.png',
+    iconUrl: 'images/icon.png',
     iconSize: [40, 50],
     className: 'blinking',
 })
