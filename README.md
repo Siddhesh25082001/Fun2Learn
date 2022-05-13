@@ -1,12 +1,14 @@
 # Fun2Learn
 
-#### Fun2Learn is a Web-app designed for people who have trouble remembering the names of the country's states and union territories
+**Fun2Learn** is a Web-app designed for people who have trouble remembering the names of the country's states and union territories
 
-#### The platform provides such individuals with an innovative and creative way to participate in the process of remembering them by taking them to the most famous monument of that state or union territory, allowing them to learn the things more easily and remember them for a longer period of time
+The platform provides such individuals with an innovative and creative way to participate in the process of remembering them by taking them to the most famous monument of that state or union territory, allowing them to learn the things more easily and remember them for a longer period of time
 
-#### The Web-App is being hosted on Github Pages and can be accessed via https://siddhesh25082001.github.io/Fun2Learn/
+The Web-App is being hosted on Github Pages and can be accessed by the following Link - **[Fun-2-Learn](https://siddhesh25082001.github.io/Fun2Learn/)**
 
-##### Some Pics of the Web-App
+---
+
+### Implementation
 
 ![image](https://user-images.githubusercontent.com/67231450/135445631-e022e924-1adf-49e5-b61b-30633f1b2377.png)
 
@@ -28,4 +30,4 @@
 
 ![image](https://user-images.githubusercontent.com/67231450/135446525-25816aed-a3bf-4ce5-a4ca-2f5c66ee3531.png)
 
-##### Visit It and Explore !!!
+#### Visit It and Explore !!!
